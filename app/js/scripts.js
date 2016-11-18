@@ -20,6 +20,10 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 	});
 
+  $(".menu a").filter(function () {
+    return this.href === location.href.replace(/#.*/, "");
+  }).parent('li').addClass("current-menu-item");
+
 	// Stuck navbar on scroll
 	if($('.navbar-sticky').length && $('.main-navigation').length) {
 		var sticky = new Waypoint.Sticky({

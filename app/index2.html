@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+ <!--SEO Meta Tags-->
+ <meta charset="UTF-8">
+    <meta name="description" content="Actiwate - Mobile app development company | World class mobile app, websites, web apps development agency">
+    <meta name="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency" content="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency">
+    <meta name="author" content="Angular.JS | Node.JS | Android | iOS">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Meta Sharing changed + seprate need for twitter and linkedin -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Actiwate" />
+    <meta property="og:url" content="http://actiwate.in/" />
+    <meta property="og:title" content="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency" />
+    <meta property="og:description" content="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency" />
+    <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/partiko-delhi/actiwate/actiwate-mobile-web-app-development-company.png" /> 
+    <meta property="og:image:type" content=".png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Actiwate" />
+    <meta name="twitter:description" content="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency" />
+    <meta name="twitter:image" content="https://s3-ap-southeast-1.amazonaws.com/partiko-delhi/actiwate/actiwate-mobile-web-app-development-company.png" />
+    <title>Actiwate | Build awesome products by the best product managers</title>
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Vendor Styles -->
+  <link href="masterslider/style/masterslider.css" rel="stylesheet" media="screen">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+</head>
+
+<!-- Body -->
+<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
+<!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
+<body class="is-preloader preloading parallax">
+  
+  <!-- Preloader -->
+  <!-- 
+      Data API:
+      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+      data-screenbg - Screen background color. Hex, RGB or RGBA colors
+   -->
+  <div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content text-center">
+          <h4>Login With Social Account</h4>
+          <div class="space-bottom-2x">
+            <a href="#" class="btn google-login waves-effect waves-light">Google<i class="fa fa-google"></i></a>
+            <a href="#" class="btn twitter-login waves-effect waves-light">Twitter<i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn facebook-login waves-effect waves-light">Facebook<i class="fa fa-facebook"></i></a>
+          </div>
+          <h4>Or by Email</h4>
+          <form method="post">
+            <input type="email" class="form-control" placeholder="Email" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <div class="form-group">
+              <button type="submit" class="btn login-btn btn-default waves-effect waves-light">Login into your account<i class="icon-head"></i></button>
+            </div>
+            <div class="text-left">
+              <span class="text-sm text-semibold">New to Nucleus? <a href="#">Sign Up</a></span>
+            </div>
+          </form><!-- <form> -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+       <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+     <header class="navbar navbar-sticky navbar-fullwidth">
+        <!-- Toolbar -->
+      <div class="topbar">
+        <div class="container">
+ <a href="index.html" class="site-logo" style="display:flex;align-items:center;">
+            <img src="img/logo.png" alt="Nucleus" style="height:52px;">
+           <h4 style="margin-bottom:0;">&nbspACTIWATE</h4> 
+          </a><!-- .site-logo -->       
+          </a><!-- .site-logo -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+
+         
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+
+      
+     
+
+      <!-- Main Navigation -->
+      <div class="container">
+
+        <nav class="main-navigation" style="display:flex;">
+ <a class="biglogo" href="index.html" class="site-logo" style="display:flex;align-items:center;">
+            <img src="img/logo.png" alt="Nucleus" style="height:52px;">
+           <h4 style="margin-bottom:0;">&nbspACTIWATE</h4> 
+          </a><!-- .site-logo -->
+          <ul class="menu">
+         
+
+
+            <li class="menu-item-has-children">
+              <a href="index.html">Home</a>
+              
+            </li>
+            <li class="current-menu-item menu-item-has-children">
+              <a href="index2.html">Why Choose Us</a>
+              
+            </li>
+             <li class="menu-item-has-children">
+              <a href="home-seo.html">Services Offered</a>
+              
+            </li>
+             <li class="menu-item-has-children">
+              <a href="portfolio-standard.html">Portfolio</a>
+             
+            </li>
+            <li class="menu-item-has-children">
+              <a href="about.html">Team</a>
+              
+            </li>
+           
+           
+            
+            <li class="menu-item-has-children">
+              <a href="contactus.html">Contact us</a>
+              
+            </li>
+           
+          </ul><!-- .menu -->
+        </nav><!-- .main-navigation -->
+      </div><!-- .container -->
+     
+    </header><!-- .navbar -->
+     <!-- Intro -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section padding-top-3x" style="background-color: #2895f1;">
+      <div class="container padding-top">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+            <h1 class="text-light">Make Users Fall in Love With Your Product</h1>
+            <h4 class="text-light text-thin">Get your product developed by the experts</h4>
+            <div class="padding-top">
+            <a href="#" class="btn btn-primary btn-icon-right waves-effect waves-light">
+              Learn More
+              <i class="icon-location"></i>
+            </a>
+            <!--<a href="#" class="btn btn-ghost btn-light waves-effect">Learn More</a>-->
+            </div>
+          </div>
+        </div><!-- .row -->
+        <img src="img/home/seo01.jpg" class="block-center" alt="SEO Services">
+      </div><!-- .container -->
+    </section><!-- .fw-section -->
+
+
+
+   
+    <!-- Team Type 1 -->
+    <section class="container padding-bottom-3x padding-top-3x">
+      <h2 class="block-title text-center">
+        Smart people. Brilliant ideas. Great Execution
+        <small>Startup founders powering your Product Development</small>
+      </h2>
+      <div class="row padding-top">
+        <!-- Teammate -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="teammate-1 text-center">
+            <div class="thumbnail">
+              <div class="flipper">
+                <div class="front">
+                  <img src="img/team/aman.jpg" alt="Team" style="height:250px;width:250px">
+                </div>
+                <div class="back">
+                  <p class="padding-top"> IIT Roorkee Graduate, Design and UI/UX expert has been building products for the past 3 years. He manages the products</p>
+                  <div class="social-bar">
+                    <a href="https://www.linkedin.com/in/amanjot-malhotra-03220561" class="sb-skype" data-toggle="tooltip" title="Linkedin">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/amanmalhotra911" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="teammate-name">Amanjot Malhotra</h3>
+            <p>Product Head</p>
+          </div>
+        </div>
+        <!-- Teammate -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="teammate-1 text-center">
+            <div class="thumbnail">
+              <div class="flipper">
+                <div class="front">
+                  <img src="img/team/gaurav.jpg" alt="Team" style="height:250px;width:250px">
+                </div>
+                <div class="back">
+                  <p class="padding-top">Ex payTM Software Engineer, MEAN Stack/elastic search expert. He manages that your products are scale-able and ready to go</p>
+                  <div class="social-bar">
+                    <a href="https://www.linkedin.com/in/gauravsaini03" class="sb-skype" data-toggle="tooltip" title="Linkedin">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/gauravsaini93" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="teammate-name">Gaurav Saini</h3>
+            <p>Technical Head</p>
+          </div>
+        </div>
+        <!-- Teammate -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="teammate-1 text-center">
+            <div class="thumbnail">
+              <div class="flipper">
+                <div class="front">
+                  <img src="img/team/shubham.jpg" alt="Team" style="height:250px;width:250px">
+                </div>
+                <div class="back">
+                  <p class="padding-top">The Marketeer with the right kind of network, he takes care of all the projects and do all the work for you so that you can just sit back and relax.</p>
+                  <div class="social-bar">
+                    <a href="https://www.linkedin.com/in/shubham-goyal-b3406191" class="sb-skype" data-toggle="tooltip" title="Linkedin">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/shubhamglad" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="teammate-name">Shubham Goyal</h3>
+            <p>Business Development</p>
+          </div>
+        </div>
+       
+        <!-- Teammate -->
+        <div class="col-lg-3 col-sm-6">
+          <div class="teammate-1 text-center">
+            <div class="thumbnail">
+              <div class="flipper">
+                <div class="front">
+                  <img src="img/team/shubham.jpg" alt="Team" style="height:250px;width:250px">
+                </div>
+                <div class="back">
+                  <p class="padding-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus, reiciendis vel exercitationem error.</p>
+                  <div class="social-bar">
+                    <a href="https://www.linkedin.com/in/shubham-goyal-b3406191" class="sb-skype" data-toggle="tooltip" title="Linkedin">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/shubhamglad" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="teammate-name">Shubham Goyal</h3>
+            <p>Business Development</p>
+          </div>
+        </div>
+       
+       
+      </div><!-- .row -->
+    </section><!-- .container -->
+     <!-- Content -->
+
+    <!-- Feature 1 -->
+    <section class="fw-section bg-parallax padding-top-3x padding-bottom-3x" style="background-image: url(img/intro/feature-bg-1.jpg);" data-stellar-background-ratio="0.65">
+      <div class="container padding-top padding-bottom">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 class="block-title text-light scrollReveal sr-scaleUp">
+              Our Designer and Developers ship code fast
+              <small>Advantages of working with our team</small>
+            </h2>
+          </div>
+          <div class="col-sm-6 padding-top">
+            <img src="img/intro/rocket.png" class="scrollReveal sr-long-left" alt="CSS3 Animations">
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.bg-parallax -->
+
+    <!-- Features 4, 5, 6, 7 -->
+    <section class="container padding-top padding-bottom text-center">
+      <h2 class="block-title scrollReveal sr-bottom">
+        We follow the Best Design Techniques?
+        <small>We use the lates design language which all devices ready</small>
+      </h2>
+      <div class="row padding-top">
+        <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-ease-in-out-back">
+          <img src="img/intro/sass.png" class="block-center" alt="SASS">
+          <h4>Built With SASS</h4>
+          <p class="text-gray text-lg">Easily change typography, colors, sizes with SASS variables.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-1 sr-ease-in-out-back">
+          <img src="img/intro/psd.png" class="block-center" alt="PSD">
+          <h4>Design + UI/UX</h4>
+          <p class="text-gray text-lg">We provide all the PSD`s used in designing for the future.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-2 sr-ease-in-out-back">
+          <img src="img/intro/layouts.png" class="block-center" alt="Layouts">
+          <h4>Responsive Layouts</h4>
+          <p class="text-gray text-lg">Our designs are made for Boxed / Full Width / Grid layouts.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-3 sr-ease-in-out-back">
+          <img src="img/intro/retina.png" class="block-center" alt="Retina">
+          <h4>Retina Ready</h4>
+          <p class="text-gray text-lg">Only vector icons. Your product stay crisp on any resolution.</p>
+        </div>
+      </div><!-- .row -->
+    
+    </section><!-- .fw-section.border-top -->
+    <!-- Feature 2 -->
+    <section class="fw-section bg-parallax padding-top-3x padding-bottom-3x" style="background-image: url(img/intro/feature-bg-2.jpg);" data-stellar-background-ratio="0.65">
+      <div class="container padding-top padding-bottom-3x">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-6">
+            <h2 class="block-title text-light text-right">
+              Developers for each Platform Available
+              <small>Each of your development requirements is fulfilled at one-stop</small>
+            </h2>
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.bg-parallax -->
+
+   <!-- Features -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section bg-default border-top padding-top-3x padding-bottom-3x">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-5 mobile-center padding-bottom scrollReveal sr-left">
+            <h2 class="block-title">How we work?<small>The complete process of shipping a product</small></h2>
+            <p class="text-gray text-lg">We’ve created the fastest and most convenient process to help you efficiently manage your business.</p>
+            <a href="#" class="btn btn-default waves-effect waves-light btn-icon-right">
+              See Documentation
+              <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-lg-8 col-md-7 scrollReveal sr-right">
+            <img src="img/home/features.png" alt="Features">
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.bg-default.border-top -->
+
+      </section><!-- .container -->
+      <!-- Logo Carousel -->
+    <section class="fw-section border-top padding-top-3x padding-bottom">
+      <div class="container">
+        <h2 class="text-semibold text-center">Technologies we use</h2>
+        <!-- Data API:
+          data-loop="true/false" enable/disable looping
+          data-autoplay="true/false" enable/disable carousel autoplay
+          data-interval="3000" autoplay interval timeout in miliseconds 
+          Simply add necessary data attribute to the ".logo-carousel" with appropriate value to adjust carousel functionality.
+         -->
+         <div>
+           <div class="inner" style="display: flex;align-items: center;justify-content: space-around;">
+             <a href="#" style="border-bottom:0px;"><img src="img/logos/01.jpg" alt="Logo" style="width:170px;"></a>
+             <a href="#" style="border-bottom:0px;"><img src="img/logos/02.jpg" alt="Logo" style="width:170px;"></a>
+             <a href="#" style="border-bottom:0px;"><img src="img/logos/03.jpg" alt="Logo" style="width:170px;"></a>
+             <a href="#" style="border-bottom:0px;"><img src="img/logos/04.jpg" alt="Logo" style="width:170px;"></a>
+            
+           </div>
+         </div><!-- .logo-carousel -->
+      </div><!-- .container -->
+
+    
+    
+
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="icon-arrow-up"></i> 
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer">
+     <div class="top-footer">
+        <div class="container">
+          <div class="tools" style="display:flex;justify-content:space-around;">
+            <div class="cell">
+              <i><img src="img/footer/icons/envelope.png" alt="Email"></i>
+              <span><a href="mailto:info@actiwate.com">info@actiwate.in</a></span>
+            </div>
+            <div class="cell">
+              <i><img src="img/footer/icons/phone.png" alt="Phone"></i>
+              <span><a href="#">+91 9599177503</a></span>
+            </div>
+               
+          </div>
+         
+        </div><!-- .container -->
+      </div><!-- .top-footer -->
+    <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_text">
+                <a href="index.html" class="site-logo">
+                  <img src="img/logo2.png" alt="Nucleus">
+                </a><!-- .site-logo -->
+                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
+              </section><!-- .widget.widget_text -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-ribbon"></i>
+                  Actiwate
+                </h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index2.html">Why choose us</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-cog"></i>
+                  About
+                </h3>
+                <ul>
+                  <li><a href="about.html">Team</a></li>
+                  <li><a href="contacts.html">Join us</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-globe"></i>
+                  Work
+                </h3>
+                <ul>
+                  <li><a href="portfolio-standard.html">Portfolio</a></li>
+                  <li><a href="#">Services Offered</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+          </div><!-- .row -->
+          <div class="copyright">
+            <div class="column">
+              <p>&copy; Actiwate 2016. Made by <a href="http://8guild.com/" target="_blank">us</a> with <i class="fa fa-heart text-danger"></i> love.</p>
+            </div><!-- .column -->
+            <div class="column">
+              <div class="cards">
+                <img src="img/cards.png" alt="Credit Cards">
+              </div>
+            </div><!-- .column -->
+          </div><!-- .copyright -->
+        </div><!-- .container -->
+      </div><!-- .bottom-footer -->
+    </footer><!-- .footer -->
+
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.easing.min.js"></script>
+  <script src="js/vendor/preloader.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/isotope.pkgd.min.js"></script>
+  <script src="masterslider/masterslider.min.js"></script>
+  <script src="js/vendor/jquery.stellar.min.js"></script>
+  <script src="js/vendor/scrollreveal.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>

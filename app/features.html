@@ -1,568 +1,261 @@
-<!DOCTYPE html>
-<html>
+<!-- Page Title -->
+<!--Add modifier class : "pt-fullwidth" to stretch page title and make it occupy 100% of the page width. -->
+<section class="page-title">
+  <div class="container">
+    <div class="inner">
+      <div class="column">
+        <div class="title">
+          <h1>Features</h1>
+        </div><!-- .title -->
+      </div><!-- .column -->
+      <div class="column">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="delimiter"><i class="icon-arrow-right"></i></span>
+          <span>Features</span>
+        </div><!-- .breadcrumbs -->
+      </div><!-- .column -->
+    </div><!-- .inner -->
+  </div><!-- .container -->
+</section><!-- .page-title -->
 
-<head>
-  <meta charset="utf-8">
-  <title>Nucleus | Features</title>
+<!-- Intro -->
+<section class="fw-section">
+  <div class="container text-center">
+    <h1>The best way to run WordPress and PHP sites.</h1>
+    <h4 class="text-gray padding-bottom">Simple, fast, secure hosting on your Nucleus servers.</h4>
+    <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+      <a href="#" class="btn btn-primary btn-block waves-effect waves-light">Get Started Free</a>
+    </div>
+  </div><!-- .container -->
+  <img src="img/features/intro.jpg" class="block-center" alt="Intro">
+</section><!-- .fw-section -->
 
-  <!--SEO Meta Tags-->
-  <meta name="description" content="Nucleus Multi-Purpose Technology Template" />
-  <meta name="keywords" content="multipurpose, technology, business, corporate, hosting, web, startup, app showcase, mobile, blog, portfolio, landing, shortcodes, html5, css3, jquery, js, gallery, slider, touch, creative" />
-  <meta name="author" content="8Guild" />
-
-  <!--Mobile Specific Meta Tag-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <!--Favicon-->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
-  <link href="css/styles.min.css" rel="stylesheet" media="screen">
-
-  <!--Modernizr / Detectizr-->
-  <script src="js/vendor/modernizr.custom.js"></script>
-  <script src="js/vendor/detectizr.min.js"></script>
-</head>
-
-<!-- Body -->
-<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
-<body class="is-preloader preloading">
-  
-  <!-- Preloader -->
-  <!-- 
-      Data API:
-      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-      data-screenbg - Screen background color. Hex, RGB or RGBA colors
-   -->
-  <div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
-
-  <!-- Page Wrapper -->
-  <div class="page-wrapper">
-
-       
-
-    <!-- Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <div class="modal-content text-center">
-          <h4>Login With Social Account</h4>
-          <div class="space-bottom-2x">
-            <a href="#" class="btn google-login waves-effect waves-light">Google<i class="fa fa-google"></i></a>
-            <a href="#" class="btn twitter-login waves-effect waves-light">Twitter<i class="fa fa-twitter"></i></a>
-            <a href="#" class="btn facebook-login waves-effect waves-light">Facebook<i class="fa fa-facebook"></i></a>
-          </div>
-          <h4>Or by Email</h4>
-          <form method="post">
-            <input type="email" class="form-control" placeholder="Email" required>
-            <input type="password" class="form-control" placeholder="Password" required>
-            <div class="form-group">
-              <button type="submit" class="btn login-btn btn-default waves-effect waves-light">Login into your account<i class="icon-head"></i></button>
-            </div>
-            <div class="text-left">
-              <span class="text-sm text-semibold">New to Nucleus? <a href="#">Sign Up</a></span>
-            </div>
-          </form><!-- <form> -->
-        </div><!-- .modal-content -->
-      </div><!-- .modal-dialog -->
-    </div><!-- .modal.fade -->
-
-    <!-- Navbar -->
-    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
-    <header class="navbar navbar-sticky">
-      
-      <!-- Toolbar -->
-      <div class="topbar">
-        <div class="container">
-          <a href="index.html" class="site-logo">
-            <img src="img/logo.png" alt="Nucleus">
-          </a><!-- .site-logo -->
-
-          <!-- Mobile Menu Toggle -->
-          <div class="nav-toggle"><span></span></div>
-
-          <div class="toolbar">
-            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal">Sign up</a>
-            <a href="#" class="btn btn-sm btn-default btn-icon-right waves-effect waves-light" data-toggle="modal" data-target="#loginModal">Log In <i class="icon-head"></i></a>
-            <!-- <a href="shopping-cart.html" class="cart-btn"><i class="icon-bag"></i></a> -->
-            <div class="search-btn">
-              <i class="icon-search"></i>
-              <form method="post" class="search-box">
-                <input type="text" class="form-control input-sm" placeholder="Search">
-                <button type="submit"><i class="icon-search"></i></button>
-              </form>
-            </div><!-- .search-btn -->
-          </div><!-- .toolbar -->
-        </div><!-- .container -->
-      </div><!-- .topbar -->
-
-      <!-- Main Navigation -->
-      <div class="container">
-        <nav class="main-navigation">
-          <ul class="menu">
-            <li class="menu-item-has-children">
-              <a href="#"><i class="flaticon-technology46"></i>Home</a>
-              <div class="mega-menu">
-                <ul>
-                  <li><a href="home-hosting.html">Hosting &amp; Cloud Services</a></li>
-                  <li><a href="home-app-showcase.html">App Showcase Landing</a></li>
-                  <li><a href="home-conference.html">Conference &amp; Meetings</a></li>
-                  <li><a href="home-startup.html">Startup Landing Page</a></li>
-                  <li><a href="home-shop.html">Shop Homepage</a></li>
-                  <li><a href="home-product-promo.html">Product Promo Page</a></li>
-                  <li><a href="home-seo.html">SEO Services Landing</a></li>
-                </ul>
-                <div class="content">
-                  <img src="img/menu-banner.png" alt="Image">
-                </div>
+<!-- CMS -->
+<!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+<section class="fw-section padding-top-3x padding-bottom-3x">
+  <div class="container">
+    <h2 class="block-title text-center">
+      Expertise in hosting web applications!
+      <small>The most popular apps run better on our servers than anywhere else!</small>
+    </h2>
+    <div class="row padding-top">
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="#" class="image-box">
+              <img src="img/cms/wordpress.png" alt="Wordpress">
+              <div class="ib-text">
+                <h3 class="ib-title">Wordpress Hosting</h3>
               </div>
-            </li>
-            <li class="menu-item-has-children current-menu-item">
-              <a href="#"><i class="flaticon-space-ship2"></i>Features</a>
-              <ul class="sub-menu"> 
-                <li class="current-menu-item"><a href="features.html">Features Page</a></li>
-                <li><a href="tour-scale.html">App Tour Slider Scale</a></li>
-                <li><a href="tour-rotate.html">App Tour Slider Rotate</a></li>
-                <li><a href="tour-gallery.html">App Tour Slider Gallery</a></li>
-                <li><a href="tour-opacity.html">App Tour Slider Opacity</a></li>
-                <li><a href="tour-parallax.html">App Tour Slider Parallax</a></li>
-              </ul>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#"><i class="flaticon-wireless-internet6"></i>Help</a>
-              <ul class="sub-menu"> 
-                <li><a href="help-general.html">Help Center General</a></li>
-                <li><a href="help-topic.html">Help Center Topic</a></li>
-              </ul>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#"><i class="flaticon-chatting"></i>Blog</a>
-              <ul class="sub-menu"> 
-                <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                <li><a href="post-no-sidebar.html">Single Post No Sidebar</a></li>
-                <li><a href="post-right-sidebar.html">Single Post Right Sidebar</a></li>
-                <li><a href="post-left-sidebar.html">Single Post Left Sidebar</a></li>
-              </ul>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#"><i class="flaticon-drawing33"></i>Portfolio</a>
-              <ul class="sub-menu">
-                <li><a href="portfolio-standard.html">Standard Grid</a></li>
-                <li><a href="portfolio-grid-gap.html">Grid With Gap</a></li>
-                <li><a href="portfolio-grid-no-gap.html">Grid No Gap</a></li>
-                
-              </ul>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#"><i class="flaticon-cd-player"></i>Shop</a>
-              <ul class="sub-menu"> 
-                <li><a href="shop-catalog.html">Shop Catalog</a></li>
-                <li><a href="shop-single.html">Single Product</a></li>
-                <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-              </ul>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#"><i class="flaticon-microphone121"></i>Pages</a>
-              <ul class="sub-menu"> 
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="press-kit.html">Press Kit</a></li>
-                <li><a href="404.html">404</a></li>
-                <li><a href="elements.html">Elements</a></li>
-              </ul>
-            </li>
-          </ul><!-- .menu -->
-        </nav><!-- .main-navigation -->
-      </div><!-- .container -->
-      <div class="social-bar mobile-socials">
-        <a href="#" class="sb-skype">
-          <i class="fa fa-skype"></i>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#" class="image-box">
+              <img src="img/cms/joomla.png" alt="Joomla">
+              <div class="ib-text">
+                <h3 class="ib-title">Joomla Hosting</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#" class="image-box">
+              <img src="img/cms/magento.png" alt="Magento">
+              <div class="ib-text">
+                <h3 class="ib-title">Magento Hosting</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <p class="text-gray text-center padding-top">We craft special hosting solutions for Joomla, WordPress, Magento
+          and the other popular web applications. To improve your experience with these tools, we have created our own
+          optimized server setup, unique security and speed systems, detailed tutorials, free templates etc.</p>
+      </div><!-- .col-lg-10.col-lg-offset-1 -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+</section><!-- .fw-section -->
+
+<!-- Colored Section -->
+<section class="fw-section" style="background-color: #1BDB68;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-6 mobile-center">
+        <div class="padding-top-3x space-top visible-lg visible-md"></div>
+        <div class="padding-top-2x visible-sm"></div>
+        <div class="padding-top-3x visible-xs"></div>
+        <h4 class="text-light">Intelligent hosting on your own servers</h4>
+        <p class="text-lg text-light">We’ve created the fastest and most convenient cloud technology to help you easily
+          and more efficiently manage your infrastructure so you can get back to coding.</p>
+        <a href="#" class="btn btn-light btn-default btn-icon-right waves-effect">
+          See Documentation
+          <i class="icon-arrow-right"></i>
         </a>
-        <a href="#" class="sb-facebook">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a href="#" class="sb-twitter">
-          <i class="fa fa-twitter"></i>
-        </a>
+        <div class="padding-top visible-xs"></div>
       </div>
-    </header><!-- .navbar -->
+      <div class="col-md-7 col-sm-6">
+        <img src="img/features/feature01.png" class="block-center" alt="Feature">
+      </div>
+    </div><!-- .row -->
+  </div><!-- .container -->
+</section><!-- .fw-section -->
 
-    <!-- Page Title -->
-    <!--Add modifier class : "pt-fullwidth" to stretch page title and make it occupy 100% of the page width. -->
-    <section class="page-title">
-      <div class="container">
-        <div class="inner">
-          <div class="column">
-            <div class="title">
-              <h1>Features</h1>
-            </div><!-- .title -->
-          </div><!-- .column -->
-          <div class="column">
-            <div class="breadcrumbs">
-              <a href="index.html">Home</a>
-              <span class="delimiter"><i class="icon-arrow-right"></i></span>
-              <span>Features</span>
-            </div><!-- .breadcrumbs -->
-          </div><!-- .column -->
-        </div><!-- .inner -->
-      </div><!-- .container -->
-    </section><!-- .page-title -->
+<!-- Colored Section -->
+<section class="fw-section" style="background-color: #2895F1;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6 text-right mobile-center">
+        <div class="padding-top-3x space-top visible-lg visible-md"></div>
+        <div class="padding-top-2x visible-sm"></div>
+        <div class="padding-top-3x visible-xs"></div>
+        <h4 class="text-light">Intelligent hosting on your own servers</h4>
+        <p class="text-lg text-light">We’ve created the fastest and most convenient cloud technology to help you easily
+          and more efficiently manage your infrastructure so you can get back to coding.</p>
+        <a href="#" class="btn btn-light btn-default btn-icon-right waves-effect">
+          See Documentation
+          <i class="icon-arrow-right"></i>
+        </a>
+        <div class="padding-top visible-xs"></div>
+      </div>
+      <div class="col-md-7 col-sm-6 col-md-pull-5 col-sm-pull-6">
+        <img src="img/features/feature02.png" class="block-center" alt="Feature">
+      </div>
+    </div><!-- .row -->
+  </div><!-- .container -->
+</section><!-- .fw-section -->
 
-    <!-- Intro -->
-    <section class="fw-section">
-      <div class="container text-center">
-        <h1>The best way to run WordPress and PHP sites.</h1>
-        <h4 class="text-gray padding-bottom">Simple, fast, secure hosting on your Nucleus servers.</h4>
-        <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
-          <a href="#" class="btn btn-primary btn-block waves-effect waves-light">Get Started Free</a>
+<!-- Videos -->
+<section class="container padding-top-3x padding-bottom-3x">
+  <h2 class="block-title text-center">
+    Advanced but Easy to Use Control Panel
+    <small>A friendly interface to control all of your virtual servers.</small>
+  </h2>
+  <div class="row padding-top">
+    <div class="col-md-3 col-sm-6">
+      <div class="video-popup-tile">
+        <div class="thumb">
+          <img src="img/video-tile/01.jpg" alt="Video">
+          <div class="inner">
+            <a href="https://www.youtube.com/watch?v=zt8eIkAChdM" class="play-btn waves-effect waves-light"><i
+                class="icon-play"></i></a>
+          </div>
         </div>
-      </div><!-- .container -->
-      <img src="img/features/intro.jpg" class="block-center" alt="Intro">
-    </section><!-- .fw-section -->
+        <h3 class="video-popup-tile-title">Floating IPs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione necessitatibus, incidunt sequi.</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="video-popup-tile">
+        <div class="thumb">
+          <img src="img/video-tile/02.jpg" alt="Video">
+          <div class="inner">
+            <a href="https://www.youtube.com/watch?v=qTkm78LgEII" class="play-btn waves-effect waves-light"><i
+                class="icon-play"></i></a>
+          </div>
+        </div>
+        <h3 class="video-popup-tile-title">Auto Backups and Snapshots</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione necessitatibus, incidunt sequi.</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="video-popup-tile">
+        <div class="thumb">
+          <img src="img/video-tile/03.jpg" alt="Video">
+          <div class="inner">
+            <a href="https://www.youtube.com/watch?v=zt8eIkAChdM" class="play-btn waves-effect waves-light"><i
+                class="icon-play"></i></a>
+          </div>
+        </div>
+        <h3 class="video-popup-tile-title">DNS Management</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione necessitatibus, incidunt sequi.</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="video-popup-tile">
+        <div class="thumb">
+          <img src="img/video-tile/04.jpg" alt="Video">
+          <div class="inner">
+            <a href="https://www.youtube.com/watch?v=qTkm78LgEII" class="play-btn waves-effect waves-light"><i
+                class="icon-play"></i></a>
+          </div>
+        </div>
+        <h3 class="video-popup-tile-title">Resize Server in a Single Click</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione necessitatibus, incidunt sequi.</p>
+      </div>
+    </div>
+  </div><!-- .row -->
+</section><!-- .container -->
 
-    <!-- CMS -->
-    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
-    <section class="fw-section padding-top-3x padding-bottom-3x">
-      <div class="container">
-        <h2 class="block-title text-center">
-          Expertise in hosting web applications!
-          <small>The most popular apps run better on our servers than anywhere else!</small>
-        </h2>
-        <div class="row padding-top">
-          <div class="col-lg-10 col-lg-offset-1">
-            <div class="row">
-              <div class="col-sm-4">
-                <a href="#" class="image-box">
-                  <img src="img/cms/wordpress.png" alt="Wordpress">
-                  <div class="ib-text">
-                    <h3 class="ib-title">Wordpress Hosting</h3>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-4">
-                <a href="#" class="image-box">
-                  <img src="img/cms/joomla.png" alt="Joomla">
-                  <div class="ib-text">
-                    <h3 class="ib-title">Joomla Hosting</h3>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-4">
-                <a href="#" class="image-box">
-                  <img src="img/cms/magento.png" alt="Magento">
-                  <div class="ib-text">
-                    <h3 class="ib-title">Magento Hosting</h3>
-                  </div>
-                </a>
-              </div>
+<!-- Pricings -->
+<section class="fw-section border-top padding-top-3x">
+  <div class="container">
+    <h2 class="block-title text-center">
+      Different hosting platforms to suit every need!
+      <small>Each type of hosting service we provide is further optimized with unique performance tweaks!</small>
+    </h2>
+    <div class="row padding-top">
+      <!-- Plan -->
+      <div class="col-sm-4">
+        <div class="pricing-plan">
+          <div class="pricing-header">
+            <div class="pricing-icon">
+              <img src="img/features/03.png" alt="Pricing">
             </div>
-            <p class="text-gray text-center padding-top">We craft special hosting solutions for Joomla, WordPress, Magento and the other popular web applications. To improve your experience with these tools, we have created our own optimized server setup, unique security and speed systems, detailed tutorials, free templates etc.</p>
-          </div><!-- .col-lg-10.col-lg-offset-1 -->
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </section><!-- .fw-section -->
-
-    <!-- Colored Section -->
-    <section class="fw-section" style="background-color: #1bdb68;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-sm-6 mobile-center">
-            <div class="padding-top-3x space-top visible-lg visible-md"></div>
-            <div class="padding-top-2x visible-sm"></div>
-            <div class="padding-top-3x visible-xs"></div>
-            <h4 class="text-light">Intelligent hosting on your own servers</h4>
-            <p class="text-lg text-light">We’ve created the fastest and most convenient cloud technology to help you easily and more efficiently manage your infrastructure so you can get back to coding.</p>
-            <a href="#" class="btn btn-light btn-default btn-icon-right waves-effect">
-              See Documentation
+            <h3 class="pricing-title">Web Hosting</h3>
+            <p>The ultimate shared hosting solutions!</p>
+            <a href="#" class="btn btn-default btn-icon-right waves-effect waves-light">
+              $3.95/mo
               <i class="icon-arrow-right"></i>
             </a>
-            <div class="padding-top visible-xs"></div>
           </div>
-          <div class="col-md-7 col-sm-6">
-            <img src="img/features/feature01.png" class="block-center" alt="Feature">
-          </div>
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </section><!-- .fw-section -->
-
-    <!-- Colored Section -->
-    <section class="fw-section" style="background-color: #2895f1;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6 text-right mobile-center">
-            <div class="padding-top-3x space-top visible-lg visible-md"></div>
-            <div class="padding-top-2x visible-sm"></div>
-            <div class="padding-top-3x visible-xs"></div>
-            <h4 class="text-light">Intelligent hosting on your own servers</h4>
-            <p class="text-lg text-light">We’ve created the fastest and most convenient cloud technology to help you easily and more efficiently manage your infrastructure so you can get back to coding.</p>
-            <a href="#" class="btn btn-light btn-default btn-icon-right waves-effect">
-              See Documentation
+          <ul>
+            <li>Domains <strong>1</strong></li>
+            <li>Storage Space <strong>2 GB</strong></li>
+            <li>Subdomains <strong>2</strong></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Plan -->
+      <div class="col-sm-4">
+        <div class="pricing-plan">
+          <div class="pricing-header">
+            <div class="pricing-icon">
+              <img src="img/features/01.png" alt="Pricing">
+            </div>
+            <h3 class="pricing-title">Cloud Hosting</h3>
+            <p>High performance cloud platform!</p>
+            <a href="#" class="btn btn-primary btn-icon-right waves-effect waves-light">
+              $60.95/mo
               <i class="icon-arrow-right"></i>
             </a>
-            <div class="padding-top visible-xs"></div>
           </div>
-          <div class="col-md-7 col-sm-6 col-md-pull-5 col-sm-pull-6">
-            <img src="img/features/feature02.png" class="block-center" alt="Feature">
-          </div>
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </section><!-- .fw-section -->
-
-    <!-- Videos -->
-    <section class="container padding-top-3x padding-bottom-3x">
-      <h2 class="block-title text-center">
-        Advanced but Easy to Use Control Panel
-        <small>A friendly interface to control all of your virtual servers.</small>
-      </h2>
-      <div class="row padding-top">
-        <div class="col-md-3 col-sm-6">
-          <div class="video-popup-tile">
-            <div class="thumb">
-              <img src="img/video-tile/01.jpg" alt="Video">
-              <div class="inner">
-                <a href="https://www.youtube.com/watch?v=zt8eIkAChdM" class="play-btn waves-effect waves-light"><i class="icon-play"></i></a>
-              </div>
-            </div>
-            <h3 class="video-popup-tile-title">Floating IPs</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione necessitatibus, incidunt sequi.</p>
-          </div>
+          <ul>
+            <li>Domains <strong>3</strong></li>
+            <li>Storage Space <strong>100 GB</strong></li>
+            <li>Subdomains <strong>5</strong></li>
+          </ul>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="video-popup-tile">
-            <div class="thumb">
-              <img src="img/video-tile/02.jpg" alt="Video">
-              <div class="inner">
-                <a href="https://www.youtube.com/watch?v=qTkm78LgEII" class="play-btn waves-effect waves-light"><i class="icon-play"></i></a>
-              </div>
+      </div>
+      <!-- Plan -->
+      <div class="col-sm-4">
+        <div class="pricing-plan">
+          <div class="pricing-header">
+            <div class="pricing-icon">
+              <img src="img/features/02.png" alt="Pricing">
             </div>
-            <h3 class="video-popup-tile-title">Auto Backups and Snapshots</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione necessitatibus, incidunt sequi.</p>
+            <h3 class="pricing-title">Dedicated Hosting</h3>
+            <p>The ultimate shared hosting solutions!</p>
+            <a href="#" class="btn btn-default btn-icon-right waves-effect waves-light">
+              $200.95/mo
+              <i class="icon-arrow-right"></i>
+            </a>
           </div>
+          <ul>
+            <li>Domains <strong>10</strong></li>
+            <li>Storage Space <strong>200 GB</strong></li>
+            <li>Subdomains <strong>20</strong></li>
+          </ul>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="video-popup-tile">
-            <div class="thumb">
-              <img src="img/video-tile/03.jpg" alt="Video">
-              <div class="inner">
-                <a href="https://www.youtube.com/watch?v=zt8eIkAChdM" class="play-btn waves-effect waves-light"><i class="icon-play"></i></a>
-              </div>
-            </div>
-            <h3 class="video-popup-tile-title">DNS Management</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione necessitatibus, incidunt sequi.</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="video-popup-tile">
-            <div class="thumb">
-              <img src="img/video-tile/04.jpg" alt="Video">
-              <div class="inner">
-                <a href="https://www.youtube.com/watch?v=qTkm78LgEII" class="play-btn waves-effect waves-light"><i class="icon-play"></i></a>
-              </div>
-            </div>
-            <h3 class="video-popup-tile-title">Resize Server in a Single Click</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione necessitatibus, incidunt sequi.</p>
-          </div>
-        </div>
-      </div><!-- .row -->
-    </section><!-- .container -->
-
-    <!-- Pricings -->
-    <section class="fw-section border-top padding-top-3x">
-      <div class="container">
-        <h2 class="block-title text-center">
-          Different hosting platforms to suit every need!
-          <small>Each type of hosting service we provide is further optimized with unique performance tweaks!</small>
-        </h2>
-        <div class="row padding-top">
-          <!-- Plan -->
-          <div class="col-sm-4">
-            <div class="pricing-plan">
-              <div class="pricing-header">
-                <div class="pricing-icon">
-                  <img src="img/features/03.png" alt="Pricing">
-                </div>
-                <h3 class="pricing-title">Web Hosting</h3>
-                <p>The ultimate shared hosting solutions!</p>
-                <a href="#" class="btn btn-default btn-icon-right waves-effect waves-light">
-                  $3.95/mo
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div>
-              <ul>
-                <li>Domains <strong>1</strong></li>
-                <li>Storage Space <strong>2 GB</strong></li>
-                <li>Subdomains <strong>2</strong></li>
-              </ul>
-            </div>
-          </div>
-          <!-- Plan -->
-          <div class="col-sm-4">
-            <div class="pricing-plan">
-              <div class="pricing-header">
-                <div class="pricing-icon">
-                  <img src="img/features/01.png" alt="Pricing">
-                </div>
-                <h3 class="pricing-title">Cloud Hosting</h3>
-                <p>High performance cloud platform!</p>
-                <a href="#" class="btn btn-primary btn-icon-right waves-effect waves-light">
-                  $60.95/mo
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div>
-              <ul>
-                <li>Domains <strong>3</strong></li>
-                <li>Storage Space <strong>100 GB</strong></li>
-                <li>Subdomains <strong>5</strong></li>
-              </ul>
-            </div>
-          </div>
-          <!-- Plan -->
-          <div class="col-sm-4">
-            <div class="pricing-plan">
-              <div class="pricing-header">
-                <div class="pricing-icon">
-                  <img src="img/features/02.png" alt="Pricing">
-                </div>
-                <h3 class="pricing-title">Dedicated Hosting</h3>
-                <p>The ultimate shared hosting solutions!</p>
-                <a href="#" class="btn btn-default btn-icon-right waves-effect waves-light">
-                  $200.95/mo
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div>
-              <ul>
-                <li>Domains <strong>10</strong></li>
-                <li>Storage Space <strong>200 GB</strong></li>
-                <li>Subdomains <strong>20</strong></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </section><!-- .fw-section.border-top -->
-
-    <!-- Scroll To Top Button -->
-    <a href="#" class="scroll-to-top-btn">
-      <i class="icon-arrow-up"></i> 
-    </a><!-- .scroll-to-top-btn -->
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="top-footer">
-        <div class="container">
-          <div class="tools">
-            <div class="cell">
-              <i><img src="img/footer/icons/envelope.png" alt="Email"></i>
-              <span><a href="mailto:info@actiwate.com">info@actiwate.in</a></span>
-            </div>
-            <div class="cell">
-              <i><img src="img/footer/icons/phone.png" alt="Phone"></i>
-              <span><a href="#">+10 (8) 555 333</a></span>
-            </div>
-               
-          </div>
-          <div class="subscribe">
-            <div class="subscribe-form">
-              <i><img src="img/footer/icons/envelope.png" alt="Subscribe"></i>
-              <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0" method="post" target="_blank" novalidate autocomplete="off">
-                <label for="subscr_email" class="sr-only">Subscribe to latest news</label>
-                <input type="email" class="form-control" id="subscr_email" placeholder="Your Email">
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;">
-                  <input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value="">
-                </div>
-                <button type="submit"><i class="icon-mail"></i></button>
-              </form>
-            </div>
-          </div>
-        </div><!-- .container -->
-      </div><!-- .top-footer -->
-
-      <div class="bottom-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <section class="widget widget_text">
-                <a href="index.html" class="site-logo">
-                  <img src="img/logo.png" alt="Nucleus">
-                </a><!-- .site-logo -->
-                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
-              </section><!-- .widget.widget_text -->
-            </div><!-- .col-md-3 -->
-            <div class="col-md-3 col-sm-6">
-              <section class="widget widget_pages">
-                <h3 class="widget-title">
-                  <i class="icon-ribbon"></i>
-                  Nucleus
-                </h3>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Domains</a></li>
-                  <li><a href="home-hosting.html">Hosting</a></li>
-                </ul>
-              </section><!-- .widget.widget_pages -->
-            </div><!-- .col-md-3 -->
-            <div class="clearfix visible-sm"></div>
-            <div class="col-md-3 col-sm-6">
-              <section class="widget widget_pages">
-                <h3 class="widget-title">
-                  <i class="icon-cog"></i>
-                  Support
-                </h3>
-                <ul>
-                  <li><a href="help-general.html">Help Center</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contacts.html">Contacts</a></li>
-                </ul>
-              </section><!-- .widget.widget_pages -->
-            </div><!-- .col-md-3 -->
-            <div class="col-md-3 col-sm-6">
-              <section class="widget widget_pages">
-                <h3 class="widget-title">
-                  <i class="icon-globe"></i>
-                  Community
-                </h3>
-                <ul>
-                  <li><a href="#">Developers</a></li>
-                  <li><a href="#">Referrals</a></li>
-                  <li><a href="#">Forum</a></li>
-                </ul>
-              </section><!-- .widget.widget_pages -->
-            </div><!-- .col-md-3 -->
-          </div><!-- .row -->
-          <div class="copyright">
-            <div class="column">
-              <p>&copy; Nucleus 2015. Made by <a href="http://8guild.com/" target="_blank">8Guild</a> with <i class="fa fa-heart text-danger"></i> love.</p>
-            </div><!-- .column -->
-            <div class="column">
-              <div class="cards">
-                <img src="img/cards.png" alt="Credit Cards">
-              </div>
-            </div><!-- .column -->
-          </div><!-- .copyright -->
-        </div><!-- .container -->
-      </div><!-- .bottom-footer -->
-    </footer><!-- .footer -->
-
-  </div><!-- .page-wrapper -->
-
-  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
-  <script src="js/vendor/jquery-2.1.4.min.js"></script>
-  <script src="js/vendor/preloader.min.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/waves.min.js"></script>
-  <script src="js/vendor/placeholder.js"></script>
-  <script src="js/vendor/smoothscroll.js"></script>
-  <script src="js/vendor/waypoints.min.js"></script>
-  <script src="js/vendor/velocity.min.js"></script>
-  <script src="js/vendor/magnific-popup.min.js"></script>
-  <script src="js/scripts.js"></script>
-
-</body><!-- <body> -->
-
-</html>
+      </div>
+    </div><!-- .row -->
+  </div><!-- .container -->
+</section><!-- .fw-section.border-top -->

@@ -1,591 +1,295 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Nucleus | Multi-Purpose Technology Template</title>
-
-    <!--SEO Meta Tags-->
-    <meta name="description" content="Nucleus Multi-Purpose Technology Template" />
-    <meta name="keywords" content="multipurpose, technology, business, corporate, hosting, web, startup, app showcase, mobile, blog, portfolio, landing, shortcodes, html5, css3, jquery, js, gallery, slider, touch, creative" />
-    <meta name="author" content="8Guild" />
-
-    <!--Mobile Specific Meta Tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-    <!--Favicon-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Vendor Styles -->
-    <link href="masterslider/style/masterslider.css" rel="stylesheet" media="screen">
-
-    <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
-    <link href="css/styles.min.css" rel="stylesheet" media="screen">
-
-    <!--Modernizr / Detectizr-->
-    <script src="js/vendor/modernizr.custom.js"></script>
-    <script src="js/vendor/detectizr.min.js"></script>
-</head>
-
-<!-- Body -->
-<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
-<!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
-<body class="is-preloader preloading parallax">
-
-<!-- Preloader -->
-<!--
-    Data API:
-    data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-    data-screenbg - Screen background color. Hex, RGB or RGBA colors
- -->
-<div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
-
-<!-- Page Wrapper -->
-<div class="page-wrapper">
-
-    <!-- Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div class="modal-content text-center">
-                <h4>Login With Social Account</h4>
-                <div class="space-bottom-2x">
-                    <a href="#" class="btn google-login waves-effect waves-light">Google<i class="fa fa-google"></i></a>
-                    <a href="#" class="btn twitter-login waves-effect waves-light">Twitter<i class="fa fa-twitter"></i></a>
-                    <a href="#" class="btn facebook-login waves-effect waves-light">Facebook<i class="fa fa-facebook"></i></a>
+<!-- Intro Full Width Slider -->
+<section class="master-slider fw-slider content-slider ms-skin-default space-bottom" id="intro-slider">
+    <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
+        <div class="container padding-top-3x padding-bottom-3x">
+            <div class="row padding-top-3x padding-bottom-2x">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                    <h1 class="text-light">Advanced Multi-Purpose Technology Template</h1>
+                    <h4 class="text-light text-thin">Nucleus incorporates both great presentational landing pages and
+                        components
+                        for building full-featured website.</h4>
+                    <div class="padding-top">
+                        <a href="#" class="btn btn-primary waves-effect waves-light">Purchase Now</a>
+                        <a href="#demos" class="btn btn-ghost btn-light waves-effect scroll-to" data-offset-top="55">View
+                            Demos</a>
+                    </div>
                 </div>
-                <h4>Or by Email</h4>
-                <form method="post">
-                    <input type="email" class="form-control" placeholder="Email" required>
-                    <input type="password" class="form-control" placeholder="Password" required>
-                    <div class="form-group">
-                        <button type="submit" class="btn login-btn btn-default waves-effect waves-light">Login into your account<i class="icon-head"></i></button>
-                    </div>
-                    <div class="text-left">
-                        <span class="text-sm text-semibold">New to Nucleus? <a href="#">Sign Up</a></span>
-                    </div>
-                </form><!-- <form> -->
-            </div><!-- .modal-content -->
-        </div><!-- .modal-dialog -->
-    </div><!-- .modal.fade -->
-
-    <!-- Navbar -->
-    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
-    <header class="navbar navbar-sticky navbar-fullwidth">
-
-        <!-- Toolbar -->
-        <div class="topbar">
-            <div class="container">
-                <a href="index.html" class="site-logo">
-                    <img src="img/logo.png" alt="Nucleus">
-                </a><!-- .site-logo -->
-
-                <!-- Mobile Menu Toggle -->
-                <div class="nav-toggle"><span></span></div>
-
-                <div class="toolbar">
-                    <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal">Sign up</a>
-                    <a href="#" class="btn btn-sm btn-default btn-icon-right waves-effect waves-light" data-toggle="modal" data-target="#loginModal">Log In <i class="icon-head"></i></a>
-                    <!-- <a href="shopping-cart.html" class="cart-btn"><i class="icon-bag"></i></a> -->
-                    <div class="search-btn">
-                        <i class="icon-search"></i>
-                        <form method="post" class="search-box">
-                            <input type="text" class="form-control input-sm" placeholder="Search">
-                            <button type="submit"><i class="icon-search"></i></button>
-                        </form>
-                    </div><!-- .search-btn -->
-                </div><!-- .toolbar -->
-            </div><!-- .container -->
-        </div><!-- .topbar -->
-
-        <!-- Main Navigation -->
-        <div class="container">
-            <nav class="main-navigation">
-                <ul class="menu">
-                    <li class="current-menu-item menu-item-has-children">
-                        <a href="#">Home</a>
-                        <div class="mega-menu">
-                            <ul>
-                                <li><a href="home-hosting.html">Hosting &amp; Cloud Services</a></li>
-                                <li><a href="home-app-showcase.html">App Showcase Landing</a></li>
-                                <li><a href="home-conference.html">Conference &amp; Meetings</a></li>
-                                <li><a href="home-startup.html">Startup Landing Page</a></li>
-                                <li><a href="home-shop.html">Shop Homepage</a></li>
-                                <li><a href="home-product-promo.html">Product Promo Page</a></li>
-                                <li><a href="home-seo.html">SEO Services Landing</a></li>
-                            </ul>
-                            <div class="content">
-                                <img src="img/menu-banner.png" alt="Image">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Features</a>
-                        <ul class="sub-menu">
-                            <li><a href="features.html">Features Page</a></li>
-                            <li><a href="tour-scale.html">App Tour Slider Scale</a></li>
-                            <li><a href="tour-rotate.html">App Tour Slider Rotate</a></li>
-                            <li><a href="tour-gallery.html">App Tour Slider Gallery</a></li>
-                            <li><a href="tour-opacity.html">App Tour Slider Opacity</a></li>
-                            <li><a href="tour-parallax.html">App Tour Slider Parallax</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Help</a>
-                        <ul class="sub-menu">
-                            <li><a href="help-general.html">Help Center General</a></li>
-                            <li><a href="help-topic.html">Help Center Topic</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                            <li><a href="post-no-sidebar.html">Single Post No Sidebar</a></li>
-                            <li><a href="post-right-sidebar.html">Single Post Right Sidebar</a></li>
-                            <li><a href="post-left-sidebar.html">Single Post Left Sidebar</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Portfolio</a>
-                        <ul class="sub-menu">
-                            <li><a href="portfolio-standard.html">Standard Grid</a></li>
-                            <li><a href="portfolio-grid-gap.html">Grid With Gap</a></li>
-                            <li><a href="portfolio-grid-no-gap.html">Grid No Gap</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Shop</a>
-                        <ul class="sub-menu">
-                            <li><a href="shop-catalog.html">Shop Catalog</a></li>
-                            <li><a href="shop-single.html">Single Product</a></li>
-                            <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Pages</a>
-                        <ul class="sub-menu">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contacts.html">Contacts</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="press-kit.html">Press Kit</a></li>
-                            <li><a href="404.html">404</a></li>
-                            <li><a href="elements.html">Elements</a></li>
-                        </ul>
-                    </li>
-                </ul><!-- .menu -->
-            </nav><!-- .main-navigation -->
-        </div><!-- .container -->
-        <div class="social-bar mobile-socials">
-            <a href="#" class="sb-skype">
-                <i class="fa fa-skype"></i>
-            </a>
-            <a href="#" class="sb-facebook">
-                <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#" class="sb-twitter">
-                <i class="fa fa-twitter"></i>
-            </a>
+            </div>
         </div>
-    </header><!-- .navbar -->
+    </div><!-- .ms-slide -->
+    <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
+        <div class="container-fluid padding-top-3x">
+            <div class="text-center padding-top-3x">
+                <h1 class="text-light"><span class="text-primary">6</span> Hand-Crafted Home Pages</h1>
+            </div>
+            <img src="img/intro/slider/slide02.png" class="block-center" alt="Home Pages">
+        </div>
+    </div><!-- .ms-slide -->
+    <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
+        <div class="container-fluid padding-top-3x">
+            <div class="text-center padding-top-3x">
+                <h1 class="text-light">Separate <span class="text-primary">FAQ &amp; Help</span> Templates</h1>
+            </div>
+            <img src="img/intro/slider/slide03.png" class="block-center" alt="Home Pages">
+        </div>
+    </div><!-- .ms-slide -->
+    <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
+        <div class="container-fluid padding-top-3x">
+            <div class="text-center padding-top-3x">
+                <h1 class="text-light">Various <span class="text-primary">Blog</span> Layouts</h1>
+            </div>
+            <img src="img/intro/slider/slide04.png" class="block-center" alt="Home Pages">
+        </div>
+    </div><!-- .ms-slide -->
+    <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
+        <div class="container-fluid padding-top-3x">
+            <div class="text-center padding-top-3x">
+                <h1 class="text-light"><span class="text-primary">Portfolio</span> Options</h1>
+            </div>
+            <img src="img/intro/slider/slide05.png" class="block-center" alt="Home Pages">
+        </div>
+    </div><!-- .ms-slide -->
+    <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
+        <div class="container-fluid padding-top-3x">
+            <div class="text-center padding-top-3x">
+                <h1 class="text-light">Numerous <span class="text-primary">Secondary</span> Pages</h1>
+            </div>
+            <img src="img/intro/slider/slide06.png" class="block-center" alt="Home Pages">
+        </div>
+    </div><!-- .ms-slide -->
+</section><!-- .master-slider.ms-skin-default -->
 
-    <!-- Intro Full Width Slider -->
-    <section class="master-slider fw-slider content-slider ms-skin-default space-bottom" id="intro-slider">
-        <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
-            <div class="container padding-top-3x padding-bottom-3x">
-                <div class="row padding-top-3x padding-bottom-2x">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                        <h1 class="text-light">Advanced Multi-Purpose Technology Template</h1>
-                        <h4 class="text-light text-thin">Nucleus incorporates both great presentational landing pages and components for building full-featured website.</h4>
-                        <div class="padding-top">
-                            <a href="#" class="btn btn-primary waves-effect waves-light">Purchase Now</a>
-                            <a href="#demos" class="btn btn-ghost btn-light waves-effect scroll-to" data-offset-top="55">View Demos</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- .ms-slide -->
-        <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
-            <div class="container-fluid padding-top-3x">
-                <div class="text-center padding-top-3x">
-                    <h1 class="text-light"><span class="text-primary">6</span> Hand-Crafted Home Pages</h1>
-                </div>
-                <img src="img/intro/slider/slide02.png" class="block-center" alt="Home Pages">
-            </div>
-        </div><!-- .ms-slide -->
-        <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
-            <div class="container-fluid padding-top-3x">
-                <div class="text-center padding-top-3x">
-                    <h1 class="text-light">Separate <span class="text-primary">FAQ &amp; Help</span> Templates</h1>
-                </div>
-                <img src="img/intro/slider/slide03.png" class="block-center" alt="Home Pages">
-            </div>
-        </div><!-- .ms-slide -->
-        <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
-            <div class="container-fluid padding-top-3x">
-                <div class="text-center padding-top-3x">
-                    <h1 class="text-light">Various <span class="text-primary">Blog</span> Layouts</h1>
-                </div>
-                <img src="img/intro/slider/slide04.png" class="block-center" alt="Home Pages">
-            </div>
-        </div><!-- .ms-slide -->
-        <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
-            <div class="container-fluid padding-top-3x">
-                <div class="text-center padding-top-3x">
-                    <h1 class="text-light"><span class="text-primary">Portfolio</span> Options</h1>
-                </div>
-                <img src="img/intro/slider/slide05.png" class="block-center" alt="Home Pages">
-            </div>
-        </div><!-- .ms-slide -->
-        <div class="ms-slide" style="background-image: url(img/intro/slider/bg.jpg);">
-            <div class="container-fluid padding-top-3x">
-                <div class="text-center padding-top-3x">
-                    <h1 class="text-light">Numerous <span class="text-primary">Secondary</span> Pages</h1>
-                </div>
-                <img src="img/intro/slider/slide06.png" class="block-center" alt="Home Pages">
-            </div>
-        </div><!-- .ms-slide -->
-    </section><!-- .master-slider.ms-skin-default -->
+<!-- Demos -->
+<section class="container padding-top-3x padding-bottom-3x" id="demos">
+    <h2 class="block-title text-center">
+        Portfolio
+    </h2>
 
-    <!-- Demos -->
-    <section class="container padding-top-3x padding-bottom-3x" id="demos">
-        <h2 class="block-title text-center">
-            Portfolio
+
+    <!-- Portfolio Grid -->
+    <div class="grid isotope-grid col-3 filter-grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+
+        <!-- Portfolio Item -->
+        <div class="grid-item services">
+            <a href="home-hosting.html" class="portfolio-item">
+                <div class="thumbnail waves-effect waves-light">
+                    <img src="img/intro/thumbs/01.jpg" alt="Hosting">
+                </div>
+                <h3 class="portfolio-title">Hosting &amp; Cloud Services</h3>
+            </a>
+        </div><!-- .grid-item.apps -->
+
+        <!-- Portfolio Item -->
+        <div class="grid-item landings">
+            <a href="home-app-showcase.html" class="portfolio-item">
+                <div class="thumbnail waves-effect waves-light">
+                    <img src="img/intro/thumbs/02.jpg" alt="App Showcase Landing">
+                </div>
+                <h3 class="portfolio-title">App Showcase Landing</h3>
+            </a>
+        </div><!-- .grid-item.identity -->
+
+        <!-- Portfolio Item -->
+        <div class="grid-item business">
+            <a href="home-conference.html" class="portfolio-item">
+                <div class="thumbnail waves-effect waves-light">
+                    <img src="img/intro/thumbs/03.jpg" alt="Conference">
+                </div>
+                <h3 class="portfolio-title">Conference &amp; Meetings</h3>
+            </a>
+        </div><!-- .grid-item.identity -->
+
+        <!-- Portfolio Item -->
+        <div class="grid-item landings">
+            <a href="home-startup.html" class="portfolio-item">
+                <div class="thumbnail waves-effect waves-light">
+                    <img src="img/intro/thumbs/04.jpg" alt="Startup Landing Page">
+                </div>
+                <h3 class="portfolio-title">Startup Landing Page</h3>
+            </a>
+        </div><!-- .grid-item.apps -->
+
+        <!-- Portfolio Item -->
+        <div class="grid-item landings">
+            <a href="home-product-promo.html" class="portfolio-item">
+                <div class="thumbnail waves-effect waves-light">
+                    <img src="img/intro/thumbs/05.jpg" alt="Product Promo Page">
+                </div>
+                <h3 class="portfolio-title">Product Promo Page</h3>
+            </a>
+        </div><!-- .grid-item.identity -->
+
+        <!-- Portfolio Item -->
+        <div class="grid-item services">
+            <a href="home-seo.html" class="portfolio-item">
+                <div class="thumbnail waves-effect waves-light">
+                    <img src="img/intro/thumbs/06.jpg" alt="SEO Services Landing">
+                </div>
+                <h3 class="portfolio-title">SEO Services Landing</h3>
+            </a>
+        </div><!-- .grid-item.apps -->
+    </div><!-- .isotope-masonry-grid -->
+</section><!-- .container -->
+
+<!-- Feature 1 -->
+<section class="fw-section arrow-top border-bottom padding-top-3x padding-bottom-3x">
+    <div class="container">
+        <h2 class="block-title text-center">We offer all the services that a startup needs to scale
+            <small>We are Amazon Web Services for Startups</small>
         </h2>
 
-
-        <!-- Portfolio Grid -->
-        <div class="grid isotope-grid col-3 filter-grid">
-            <div class="grid-sizer"></div>
-            <div class="gutter-sizer"></div>
-
-            <!-- Portfolio Item -->
-            <div class="grid-item services">
-                <a href="home-hosting.html" class="portfolio-item">
-                    <div class="thumbnail waves-effect waves-light">
-                        <img src="img/intro/thumbs/01.jpg" alt="Hosting">
-                    </div>
-                    <h3 class="portfolio-title">Hosting &amp; Cloud Services</h3>
-                </a>
-            </div><!-- .grid-item.apps -->
-
-            <!-- Portfolio Item -->
-            <div class="grid-item landings">
-                <a href="home-app-showcase.html" class="portfolio-item">
-                    <div class="thumbnail waves-effect waves-light">
-                        <img src="img/intro/thumbs/02.jpg" alt="App Showcase Landing">
-                    </div>
-                    <h3 class="portfolio-title">App Showcase Landing</h3>
-                </a>
-            </div><!-- .grid-item.identity -->
-
-            <!-- Portfolio Item -->
-            <div class="grid-item business">
-                <a href="home-conference.html" class="portfolio-item">
-                    <div class="thumbnail waves-effect waves-light">
-                        <img src="img/intro/thumbs/03.jpg" alt="Conference">
-                    </div>
-                    <h3 class="portfolio-title">Conference &amp; Meetings</h3>
-                </a>
-            </div><!-- .grid-item.identity -->
-
-            <!-- Portfolio Item -->
-            <div class="grid-item landings">
-                <a href="home-startup.html" class="portfolio-item">
-                    <div class="thumbnail waves-effect waves-light">
-                        <img src="img/intro/thumbs/04.jpg" alt="Startup Landing Page">
-                    </div>
-                    <h3 class="portfolio-title">Startup Landing Page</h3>
-                </a>
-            </div><!-- .grid-item.apps -->
-
-            <!-- Portfolio Item -->
-            <div class="grid-item landings">
-                <a href="home-product-promo.html" class="portfolio-item">
-                    <div class="thumbnail waves-effect waves-light">
-                        <img src="img/intro/thumbs/05.jpg" alt="Product Promo Page">
-                    </div>
-                    <h3 class="portfolio-title">Product Promo Page</h3>
-                </a>
-            </div><!-- .grid-item.identity -->
-
-            <!-- Portfolio Item -->
-            <div class="grid-item services">
-                <a href="home-seo.html" class="portfolio-item">
-                    <div class="thumbnail waves-effect waves-light">
-                        <img src="img/intro/thumbs/06.jpg" alt="SEO Services Landing">
-                    </div>
-                    <h3 class="portfolio-title">SEO Services Landing</h3>
-                </a>
-            </div><!-- .grid-item.apps -->
-        </div><!-- .isotope-masonry-grid -->
-    </section><!-- .container -->
-
-    <!-- Feature 1 -->
-    <section class="fw-section arrow-top border-bottom padding-top-3x padding-bottom-3x">
-        <div class="container">
-            <h2 class="block-title text-center">We offer all the services that a startup needs to scale<small>We are Amazon Web Services for Startups</small></h2>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
-                    <div class="box-with-icon bwi-expandable text-center">
-                        <div class="bwi-inner">
-                            <div class="bwi-icon">
-                                <img src="img/features/01.png" alt="Feature">
-                            </div>
-                            <h3 class="bwi-title">Simple and Elegant Intefaces</h3>
-                            <p class="bwi-text">Designed with simplicity in the mind we follow Google in designing and stick to their rules especially Material Design.</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
+                <div class="box-with-icon bwi-expandable text-center">
+                    <div class="bwi-inner">
+                        <div class="bwi-icon">
+                            <img src="img/features/01.png" alt="Feature">
                         </div>
+                        <h3 class="bwi-title">Simple and Elegant Intefaces</h3>
+                        <p class="bwi-text">Designed with simplicity in the mind we follow Google in designing and stick
+                            to their
+                            rules especially Material Design.</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
-                    <div class="box-with-icon bwi-expandable text-center">
-                        <div class="bwi-inner">
-                            <div class="bwi-icon">
-                                <img src="img/features/02.png" alt="Feature">
-                            </div>
-                            <h3 class="bwi-title">Simple Control Panel</h3>
-                            <p class="bwi-text">Control Panel for the product is the un-seen most important part of the product, we take that very seriously and build it so intuitive that a primitive person will also be able to use it to manage the platform .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
-                    <div class="box-with-icon bwi-expandable text-center">
-                        <div class="bwi-inner">
-                            <div class="bwi-icon">
-                                <img src="img/features/03.png" alt="Feature">
-                            </div>
-                            <h3 class="bwi-title">Cloud Server Management</h3>
-                            <p class="bwi-text">We have 5 years of experience in managing cloud servers, especially Amazon Web Services So, the most important part of deployment is coverted </p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- .row -->
-            <div class="row">
-                <div class="col-sm-4">
-                    <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
-                    <div class="box-with-icon bwi-expandable text-center">
-                        <div class="bwi-inner">
-                            <div class="bwi-icon">
-                                <img src="img/features/04.png" alt="Feature">
-                            </div>
-                            <h3 class="bwi-title">Product Development</h3>
-                            <p class="bwi-text">We use the latest technologies to deliver the best performing products for your users. MEAN stack coupled with AWS is a formidable combination. This also enables us to add features quicky and also ship code fast.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
-                    <div class="box-with-icon bwi-expandable text-center">
-                        <div class="bwi-inner">
-                            <div class="bwi-icon">
-                                <img src="img/features/05.png" alt="Feature">
-                            </div>
-                            <h3 class="bwi-title">Platform Independent</h3>
-                            <p class="bwi-text">We have all the developers i.e Android, iOS, Angular.js , Node.js that enable us to build products for all the platform out there i.e Android, Apple, Windows, Web, hybrid etc. This enable you to provide your product for each kind of user.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <!--<!-- Remove class ".bwi-expandable" to expand block and make it static. -->
-                    <div class="box-with-icon bwi-expandable text-center">
-                        <div class="bwi-inner">
-                            <div class="bwi-icon">
-                                <img src="img/features/06.png" alt="Feature">
-                            </div>
-                            <h3 class="bwi-title">Marketing & Branding</h3>
-                            <p class="bwi-text">As we have also a dedicated marketing and branding team onboard we can help you design your collaterals, branding material and alse fetch you marketing proposition from the market which can be a hand</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .fw-section.arrow-top.border-bottom -->
-
-    <!-- Feature 2 -->
-    <section class="fw-section bg-parallax padding-top-3x padding-bottom-3x" style="background-image: url(img/intro/feature-bg-2.jpg);" data-stellar-background-ratio="0.65">
-        <div class="container padding-top padding-bottom-3x">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-6">
-                    <h2 class="block-title text-light text-right">
-                        Fully Responsive
-                        <small>Built with Responsive Bootstrap 3 Grid</small>
-                    </h2>
-                </div>
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .fw-section.bg-parallax -->
-
-    <!-- Feature 3 -->
-    <section class="container padding-top-3x padding-bottom-3x text-center">
-        <div class="scrollReveal sr-bottom">
-            <img src="img/intro/master-logo.png" class="block-center" alt="Master Slider">
-            <h2 style="margin-bottom: 15px;">Premium Master Slider</h2>
-            <h4 class="text-gray">SAVE $17</h4>
-        </div>
-        <img src="img/intro/master.jpg" class="block-center scrollReveal sr-scaleDown sr-delay-1" alt="Master Slider">
-    </section><!-- .container -->
-
-    <!-- Features 4, 5, 6, 7 -->
-    <section class="container padding-top padding-bottom text-center">
-        <h2 class="block-title scrollReveal sr-bottom">
-            Even More Features
-            <small>What's under the hood?</small>
-        </h2>
-        <div class="row padding-top">
-            <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-ease-in-out-back">
-                <img src="img/intro/sass.png" class="block-center" alt="SASS">
-                <h4>Built With SASS</h4>
-                <p class="text-gray text-lg">Easily change typography, colors, sizes with SASS variables.</p>
             </div>
-            <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-1 sr-ease-in-out-back">
-                <img src="img/intro/psd.png" class="block-center" alt="PSD">
-                <h4>Premium PSD</h4>
-                <p class="text-gray text-lg">We included premium PSD worth of <strong>$12</strong> into the template.</p>
+            <div class="col-sm-4">
+                <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
+                <div class="box-with-icon bwi-expandable text-center">
+                    <div class="bwi-inner">
+                        <div class="bwi-icon">
+                            <img src="img/features/02.png" alt="Feature">
+                        </div>
+                        <h3 class="bwi-title">Simple Control Panel</h3>
+                        <p class="bwi-text">Control Panel for the product is the un-seen most important part of the
+                            product, we take
+                            that very seriously and build it so intuitive that a primitive person will also be able to
+                            use it to
+                            manage the platform .</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-2 sr-ease-in-out-back">
-                <img src="img/intro/layouts.png" class="block-center" alt="Layouts">
-                <h4>Various Layouts</h4>
-                <p class="text-gray text-lg">Template features Boxed / Full Width / Grid layouts.</p>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-3 sr-ease-in-out-back">
-                <img src="img/intro/retina.png" class="block-center" alt="Retina">
-                <h4>Retina Ready</h4>
-                <p class="text-gray text-lg">Only vector icons. Your template stay crisp on any resolution.</p>
+            <div class="col-sm-4">
+                <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
+                <div class="box-with-icon bwi-expandable text-center">
+                    <div class="bwi-inner">
+                        <div class="bwi-icon">
+                            <img src="img/features/03.png" alt="Feature">
+                        </div>
+                        <h3 class="bwi-title">Cloud Server Management</h3>
+                        <p class="bwi-text">We have 5 years of experience in managing cloud servers, especially Amazon
+                            Web Services
+                            So, the most important part of deployment is coverted </p>
+                    </div>
+                </div>
             </div>
         </div><!-- .row -->
-    </section><!-- .container -->
-
-    <!-- Scroll To Top Button -->
-    <a href="#" class="scroll-to-top-btn">
-        <i class="icon-arrow-up"></i>
-    </a><!-- .scroll-to-top-btn -->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="top-footer">
-            <div class="container">
-                <div class="tools">
-                    <div class="cell">
-                        <i><img src="img/footer/icons/help.png" alt="Email"></i>
-                        <span><a href="mailto:info@email.com">info@email.com</a></span>
-                    </div>
-                    <div class="cell">
-                        <i><img src="img/footer/icons/phone.png" alt="Phone"></i>
-                        <span><a href="#">+10 (8) 555 333</a></span>
-                    </div>
-                    <div class="cell">
-                        <i><img src="img/footer/icons/chat.png" alt="Chat"></i>
-                        <span><a href="#">Live Chat</a></span>
-                    </div>
-                </div>
-                <div class="subscribe">
-                    <div class="subscribe-form">
-                        <i><img src="img/footer/icons/envelope.png" alt="Subscribe"></i>
-                        <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0" method="post" target="_blank" novalidate autocomplete="off">
-                            <label for="subscr_email" class="sr-only">Subscribe to latest news</label>
-                            <input type="email" class="form-control" id="subscr_email" placeholder="Your Email">
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;">
-                                <input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value="">
-                            </div>
-                            <button type="submit"><i class="icon-mail"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div><!-- .container -->
-        </div><!-- .top-footer -->
-
-        <div class="bottom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <section class="widget widget_text">
-                            <a href="index.html" class="site-logo">
-                                <img src="img/logo2.png" alt="Nucleus">
-                            </a><!-- .site-logo -->
-                            <p>The Product Development factory. World class mobile appss, websites, web apps development agency.</p>
-                        </section><!-- .widget.widget_text -->
-                    </div><!-- .col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <section class="widget widget_pages">
-                            <h3 class="widget-title">
-                                <i class="icon-ribbon"></i>
-                                Actiwate
-                            </h3>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="whychooseus.html">Why choose us</a></li>
-                            </ul>
-                        </section><!-- .widget.widget_pages -->
-                    </div><!-- .col-md-3 -->
-                    <div class="clearfix visible-sm"></div>
-                    <div class="col-md-3 col-sm-6">
-                        <section class="widget widget_pages">
-                            <h3 class="widget-title">
-                                <i class="icon-cog"></i>
-                                About
-                            </h3>
-                            <ul>
-                                <li><a href="team-members.html">Team</a></li>
-                                <li><a href="contacts.html">Join us</a></li>
-                            </ul>
-                        </section><!-- .widget.widget_pages -->
-                    </div><!-- .col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <section class="widget widget_pages">
-                            <h3 class="widget-title">
-                                <i class="icon-globe"></i>
-                                Work
-                            </h3>
-                            <ul>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="servicesoffered.html">Services Offered</a></li>
-                                <li><a href="google.com">Industries</a></li>
-                            </ul>
-                        </section><!-- .widget.widget_pages -->
-                    </div><!-- .col-md-3 -->
-                </div><!-- .row -->
-                <div class="copyright">
-                    <div class="column">
-                        <p>&copy; Actiwate 2016. Made by <a href="http://8guild.com/" target="_blank">us</a> with <i class="fa fa-heart text-danger"></i> love.</p>
-                    </div><!-- .column -->
-                    <div class="column">
-                        <div class="cards">
-                            <img src="img/cards.png" alt="Credit Cards">
+        <div class="row">
+            <div class="col-sm-4">
+                <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
+                <div class="box-with-icon bwi-expandable text-center">
+                    <div class="bwi-inner">
+                        <div class="bwi-icon">
+                            <img src="img/features/04.png" alt="Feature">
                         </div>
-                    </div><!-- .column -->
-                </div><!-- .copyright -->
-            </div><!-- .container -->
-        </div><!-- .bottom-footer -->
-    </footer><!-- .footer -->
+                        <h3 class="bwi-title">Product Development</h3>
+                        <p class="bwi-text">We use the latest technologies to deliver the best performing products for
+                            your users.
+                            MEAN stack coupled with AWS is a formidable combination. This also enables us to add
+                            features quicky and
+                            also ship code fast.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <!-- Remove class ".bwi-expandable" to expand block and make it static. -->
+                <div class="box-with-icon bwi-expandable text-center">
+                    <div class="bwi-inner">
+                        <div class="bwi-icon">
+                            <img src="img/features/05.png" alt="Feature">
+                        </div>
+                        <h3 class="bwi-title">Platform Independent</h3>
+                        <p class="bwi-text">We have all the developers i.e Android, iOS, Angular.js , Node.js that
+                            enable us to
+                            build products for all the platform out there i.e Android, Apple, Windows, Web, hybrid etc.
+                            This enable
+                            you to provide your product for each kind of user.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <!--<!-- Remove class ".bwi-expandable" to expand block and make it static. -->
+                <div class="box-with-icon bwi-expandable text-center">
+                    <div class="bwi-inner">
+                        <div class="bwi-icon">
+                            <img src="img/features/06.png" alt="Feature">
+                        </div>
+                        <h3 class="bwi-title">Marketing & Branding</h3>
+                        <p class="bwi-text">As we have also a dedicated marketing and branding team onboard we can help
+                            you design
+                            your collaterals, branding material and alse fetch you marketing proposition from the market
+                            which can be
+                            a hand</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section><!-- .fw-section.arrow-top.border-bottom -->
 
-</div><!-- .page-wrapper -->
+<!-- Feature 2 -->
+<section class="fw-section bg-parallax padding-top-3x padding-bottom-3x"
+         style="background-image: url(img/intro/feature-bg-2.jpg);" data-stellar-background-ratio="0.65">
+    <div class="container padding-top padding-bottom-3x">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-6">
+                <h2 class="block-title text-light text-right">
+                    Fully Responsive
+                    <small>Built with Responsive Bootstrap 3 Grid</small>
+                </h2>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section><!-- .fw-section.bg-parallax -->
 
-<!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
-<script src="js/vendor/jquery-2.1.4.min.js"></script>
-<script src="js/vendor/jquery.easing.min.js"></script>
-<script src="js/vendor/preloader.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/vendor/waves.min.js"></script>
-<script src="js/vendor/placeholder.js"></script>
-<script src="js/vendor/smoothscroll.js"></script>
-<script src="js/vendor/waypoints.min.js"></script>
-<script src="js/vendor/velocity.min.js"></script>
-<script src="js/vendor/isotope.pkgd.min.js"></script>
-<script src="masterslider/masterslider.min.js"></script>
-<script src="js/vendor/jquery.stellar.min.js"></script>
-<script src="js/vendor/scrollreveal.min.js"></script>
-<script src="js/scripts.js"></script>
+<!-- Feature 3 -->
+<section class="container padding-top-3x padding-bottom-3x text-center">
+    <div class="scrollReveal sr-bottom">
+        <img src="img/intro/master-logo.png" class="block-center" alt="Master Slider">
+        <h2 style="margin-bottom: 15px;">Premium Master Slider</h2>
+        <h4 class="text-gray">SAVE $17</h4>
+    </div>
+    <img src="img/intro/master.jpg" class="block-center scrollReveal sr-scaleDown sr-delay-1" alt="Master Slider">
+</section><!-- .container -->
 
-</body><!-- <body> -->
-
-</html>
+<!-- Features 4, 5, 6, 7 -->
+<section class="container padding-top padding-bottom text-center">
+    <h2 class="block-title scrollReveal sr-bottom">
+        Even More Features
+        <small>What's under the hood?</small>
+    </h2>
+    <div class="row padding-top">
+        <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-ease-in-out-back">
+            <img src="img/intro/sass.png" class="block-center" alt="SASS">
+            <h4>Built With SASS</h4>
+            <p class="text-gray text-lg">Easily change typography, colors, sizes with SASS variables.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-1 sr-ease-in-out-back">
+            <img src="img/intro/psd.png" class="block-center" alt="PSD">
+            <h4>Premium PSD</h4>
+            <p class="text-gray text-lg">We included premium PSD worth of <strong>$12</strong> into the template.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-2 sr-ease-in-out-back">
+            <img src="img/intro/layouts.png" class="block-center" alt="Layouts">
+            <h4>Various Layouts</h4>
+            <p class="text-gray text-lg">Template features Boxed / Full Width / Grid layouts.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-delay-3 sr-ease-in-out-back">
+            <img src="img/intro/retina.png" class="block-center" alt="Retina">
+            <h4>Retina Ready</h4>
+            <p class="text-gray text-lg">Only vector icons. Your template stay crisp on any resolution.</p>
+        </div>
+    </div><!-- .row -->
+</section><!-- .container -->

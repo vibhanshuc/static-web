@@ -1,471 +1,219 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-   <!--SEO Meta Tags-->
- <meta charset="UTF-8">
-    <meta name="description" content="Actiwate - Mobile app development company | World class mobile app, websites, web apps development agency">
-    <meta name="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency" content="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency">
-    <meta name="author" content="Angular.JS | Node.JS | Android | iOS">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Meta Sharing changed + seprate need for twitter and linkedin -->
-
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Actiwate" />
-    <meta property="og:url" content="http://actiwate.in/" />
-    <meta property="og:title" content="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency" />
-    <meta property="og:description" content="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency" />
-    <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/partiko-delhi/actiwate/actiwate-mobile-web-app-development-company.png" />
-    <meta property="og:image:type" content=".png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Actiwate" />
-    <meta name="twitter:description" content="Actiwate - Mobile Apps, android app development, iOS apps, website, web-apps development agency" />
-    <meta name="twitter:image" content="https://s3-ap-southeast-1.amazonaws.com/partiko-delhi/actiwate/actiwate-mobile-web-app-development-company.png" />
-    <title>Actiwate | Build awesome products by the best product managers</title>
-
- <!--Mobile Specific Meta Tag-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-
-  <!--Favicon-->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
-  <link href="css/styles.min.css" rel="stylesheet" media="screen">
-
-  <!--Modernizr / Detectizr-->
-  <script src="js/vendor/modernizr.custom.js"></script>
-  <script src="js/vendor/detectizr.min.js"></script>
-</head>
-
-<!-- Body -->
-<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
-<body class="is-preloader preloading">
-
-  <!-- Preloader -->
-  <!--
-      Data API:
-      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-      data-screenbg - Screen background color. Hex, RGB or RGBA colors
-   -->
-  <div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
-
-  <!-- Page Wrapper -->
-  <div class="page-wrapper">
-
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <div class="modal-content text-center">
-          <h4>Login With Social Account</h4>
-          <div class="space-bottom-2x">
-            <a href="#" class="btn google-login waves-effect waves-light">Google<i class="fa fa-google"></i></a>
-            <a href="#" class="btn twitter-login waves-effect waves-light">Twitter<i class="fa fa-twitter"></i></a>
-            <a href="#" class="btn facebook-login waves-effect waves-light">Facebook<i class="fa fa-facebook"></i></a>
-          </div>
-          <h4>Or by Email</h4>
-          <form method="post">
-            <input type="email" class="form-control" placeholder="Email" required>
-            <input type="password" class="form-control" placeholder="Password" required>
-            <div class="form-group">
-              <button type="submit" class="btn login-btn btn-default waves-effect waves-light">Login into your account<i class="icon-head"></i></button>
+<!-- Team Type 1 -->
+<section class="container padding-bottom-3x padding-top-3x">
+  <h2 class="block-title text-center">
+    Smart people. Brilliant ideas.
+    <small>Who's behind all this?</small>
+  </h2>
+  <div class="row padding-top">
+    <!-- Teammate -->
+    <!--
+    <div class="col-lg-3 col-sm-6">
+      <div class="teammate-1 text-center">
+        <div class="thumbnail">
+          <div class="flipper">
+            <div class="front">
+              <img src="img/team/aman.jpg" alt="Team" style="height:250px;width:250px">
             </div>
-            <div class="text-left">
-              <span class="text-sm text-semibold">New to Nucleus? <a href="#">Sign Up</a></span>
-            </div>
-          </form><!-- <form> -->
-        </div><!-- .modal-content -->
-      </div><!-- .modal-dialog -->
-    </div><!-- .modal.fade -->
+            <div class="back">
+              <p class="padding-top"> IIT Roorkee Graduate, Design and UI/UX expert has been building products for the past 3 years. He manages the products</p>
+              <div class="social-bar">
+                <a href="https://www.linkedin.com/in/amanjot-malhotra-03220561" class="sb-skype" data-toggle="tooltip" title="Linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/amanmalhotra911" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
 
-        <!-- Navbar -->
-    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
-     <header class="navbar navbar-sticky navbar-fullwidth">
-        <!-- Toolbar -->
-      <div class="topbar">
-        <div class="container">
- <a href="index.html" class="site-logo" style="display:flex;align-items:center;">
-            <img src="img/logo.png" alt="Nucleus" style="height:52px;">
-           <h4 style="margin-bottom:0;">&nbspACTIWATE</h4>
-          </a><!-- .site-logo -->
-          </a><!-- .site-logo -->
-
-          <!-- Mobile Menu Toggle -->
-          <div class="nav-toggle"><span></span></div>
-
-
-        </div><!-- .container -->
-      </div><!-- .topbar -->
-
-
-
-
-      <!-- Main Navigation -->
-      <div class="container">
-
-        <nav class="main-navigation" style="display:flex;">
- <a class="biglogo" href="index.html" class="site-logo" style="display:flex;align-items:center;">
-            <img src="img/logo.png" alt="Nucleus" style="height:52px;">
-           <h4 style="margin-bottom:0;">&nbspACTIWATE</h4>
-          </a><!-- .site-logo -->
-          <ul class="menu">
-
-
-
-            <li class="menu-item-has-children">
-              <a href="index.html">Home</a>
-
-            </li>
-            <li class="menu-item-has-children">
-              <a href="whychooseus.html">Why Choose Us</a>
-
-            </li>
-                   <li class="menu-item-has-children">
-              <a href="services-offered.html">Services Offered</a>
-
-            </li>
-
-
-             <li class="menu-item-has-children">
-              <a href="portfolio.html">Portfolio</a>
-
-            </li>
-            <li class="current-menu-item menu-item-has-children">
-              <a href="team-members.html">Team</a>
-
-            </li>
-
-            <li class="menu-item-has-children">
-              <a href="contactus.html">Contact us</a>
-
-            </li>
-
-          </ul><!-- .menu -->
-        </nav><!-- .main-navigation -->
-      </div><!-- .container -->
-
-    </header><!-- .navbar -->
-
-    <!-- Team Type 1 -->
-    <section class="container padding-bottom-3x padding-top-3x">
-      <h2 class="block-title text-center">
-        Smart people. Brilliant ideas.
-        <small>Who's behind all this?</small>
-      </h2>
-      <div class="row padding-top">
-        <!-- Teammate -->
-        <!--
-        <div class="col-lg-3 col-sm-6">
-          <div class="teammate-1 text-center">
-            <div class="thumbnail">
-              <div class="flipper">
-                <div class="front">
-                  <img src="img/team/aman.jpg" alt="Team" style="height:250px;width:250px">
-                </div>
-                <div class="back">
-                  <p class="padding-top"> IIT Roorkee Graduate, Design and UI/UX expert has been building products for the past 3 years. He manages the products</p>
-                  <div class="social-bar">
-                    <a href="https://www.linkedin.com/in/amanjot-malhotra-03220561" class="sb-skype" data-toggle="tooltip" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/amanmalhotra911" class="sb-facebook" data-toggle="tooltip" title="Facebook">
-                      <i class="fa fa-facebook"></i>
-                    </a>
-
-                  </div>
-                </div>
               </div>
             </div>
-            <h3 class="teammate-name">Amanjot Malhotra</h3>
-            <p>Product Head</p>
           </div>
         </div>
-      -->
-        <!-- Teammate -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="teammate-1 text-center">
-            <div class="thumbnail">
-              <div class="flipper">
-                <div class="front">
-                  <img src="img/team/gaurav.jpg" alt="Team" style="height:250px;width:250px">
-                </div>
-                <div class="back">
-                  <p class="padding-top">Ex payTM Software Engineer, MEAN Stack/elastic search expert. He manages that your products are scale-able and ready to go</p>
-                  <div class="social-bar">
-                    <a href="https://www.linkedin.com/in/gauravsaini03" class="sb-skype" data-toggle="tooltip" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/gauravsaini93" class="sb-facebook" data-toggle="tooltip" title="Facebook">
-                      <i class="fa fa-facebook"></i>
-                    </a>
+        <h3 class="teammate-name">Amanjot Malhotra</h3>
+        <p>Product Head</p>
+      </div>
+    </div>
+  -->
+    <!-- Teammate -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="teammate-1 text-center">
+        <div class="thumbnail">
+          <div class="flipper">
+            <div class="front">
+              <img src="img/team/gaurav.jpg" alt="Team" style="height:250px;width:250px">
+            </div>
+            <div class="back">
+              <p class="padding-top">Ex payTM Software Engineer, MEAN Stack/elastic search expert. He manages that your
+                products are scale-able and ready to go</p>
+              <div class="social-bar">
+                <a href="https://www.linkedin.com/in/gauravsaini03" class="sb-skype" data-toggle="tooltip"
+                   title="Linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/gauravsaini93" class="sb-facebook" data-toggle="tooltip"
+                   title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
 
-                  </div>
-                </div>
               </div>
             </div>
-            <h3 class="teammate-name">Gaurav Saini</h3>
-            <p>Technical Head</p>
           </div>
         </div>
-        <!-- Teammate -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="teammate-1 text-center">
-            <div class="thumbnail">
-              <div class="flipper">
-                <div class="front">
-                  <img src="img/team/shubham.jpg" alt="Team" style="height:250px;width:250px">
-                </div>
-                <div class="back">
-                  <p class="padding-top">The Marketeer with the right kind of network, he takes care of all the projects and do all the work for you so that you can just sit back and relax.</p>
-                  <div class="social-bar">
-                    <a href="https://www.linkedin.com/in/shubham-goyal-b3406191" class="sb-skype" data-toggle="tooltip" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/shubhamglad" class="sb-facebook" data-toggle="tooltip" title="Facebook">
-                      <i class="fa fa-facebook"></i>
-                    </a>
+        <h3 class="teammate-name">Gaurav Saini</h3>
+        <p>Technical Head</p>
+      </div>
+    </div>
+    <!-- Teammate -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="teammate-1 text-center">
+        <div class="thumbnail">
+          <div class="flipper">
+            <div class="front">
+              <img src="img/team/shubham.jpg" alt="Team" style="height:250px;width:250px">
+            </div>
+            <div class="back">
+              <p class="padding-top">The Marketeer with the right kind of network, he takes care of all the projects and
+                do all the work for you so that you can just sit back and relax.</p>
+              <div class="social-bar">
+                <a href="https://www.linkedin.com/in/shubham-goyal-b3406191" class="sb-skype" data-toggle="tooltip"
+                   title="Linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/shubhamglad" class="sb-facebook" data-toggle="tooltip"
+                   title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
 
-                  </div>
-                </div>
               </div>
             </div>
-            <h3 class="teammate-name">Shubham Goyal</h3>
-            <p>Business Development</p>
           </div>
         </div>
-               <!-- Teammate -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="teammate-1 text-center">
-            <div class="thumbnail">
-              <div class="flipper">
-                <div class="front">
-                  <img src="img/team/puneet.jpg" alt="Team" style="height:250px;width:250px">
-                </div>
-                <div class="back">
-                  <p class="padding-top"> IIT Roorkee Graduate, Design and UI/UX expert has been building products for the past 3 years. He manages the products</p>
-                  <div class="social-bar">
-                    <a href="https://www.linkedin.com/in/puneetkohli171" class="sb-skype" data-toggle="tooltip" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/puneet.kohli.125" data-toggle="tooltip" title="Facebook">
-                      <i class="fa fa-facebook"></i>
-                    </a>
+        <h3 class="teammate-name">Shubham Goyal</h3>
+        <p>Business Development</p>
+      </div>
+    </div>
+    <!-- Teammate -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="teammate-1 text-center">
+        <div class="thumbnail">
+          <div class="flipper">
+            <div class="front">
+              <img src="img/team/puneet.jpg" alt="Team" style="height:250px;width:250px">
+            </div>
+            <div class="back">
+              <p class="padding-top"> IIT Roorkee Graduate, Design and UI/UX expert has been building products for the
+                past 3 years. He manages the products</p>
+              <div class="social-bar">
+                <a href="https://www.linkedin.com/in/puneetkohli171" class="sb-skype" data-toggle="tooltip"
+                   title="Linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/puneet.kohli.125" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
 
-                  </div>
-                </div>
               </div>
             </div>
-            <h3 class="teammate-name">Puneet Kohli</h3>
-            <p>Product Manager</p>
           </div>
         </div>
-        <!-- Teammate -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="teammate-1 text-center">
-            <div class="thumbnail">
-              <div class="flipper">
-                <div class="front">
-                  <img src="img/team/mohit.jpg" alt="Team" style="height:250px;width:250px">
-                </div>
-                <div class="back">
-                  <p class="padding-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus, reiciendis vel exercitationem error.</p>
-                  <div class="social-bar">
-                    <a href="https://www.linkedin.com/in/mohit-goyal-765b2983" class="sb-skype" data-toggle="tooltip" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/mohitgoyal707" data-toggle="tooltip" title="Facebook">
-                      <i class="fa fa-facebook"></i>
-                    </a>
+        <h3 class="teammate-name">Puneet Kohli</h3>
+        <p>Product Manager</p>
+      </div>
+    </div>
+    <!-- Teammate -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="teammate-1 text-center">
+        <div class="thumbnail">
+          <div class="flipper">
+            <div class="front">
+              <img src="img/team/mohit.jpg" alt="Team" style="height:250px;width:250px">
+            </div>
+            <div class="back">
+              <p class="padding-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus,
+                reiciendis vel exercitationem error.</p>
+              <div class="social-bar">
+                <a href="https://www.linkedin.com/in/mohit-goyal-765b2983" class="sb-skype" data-toggle="tooltip"
+                   title="Linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/mohitgoyal707" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
 
-                  </div>
-                </div>
               </div>
             </div>
-            <h3 class="teammate-name">Mohit Goyal</h3>
-            <p>Back-End Developer</p>
           </div>
         </div>
-        <!-- Teammate -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="teammate-1 text-center">
-            <div class="thumbnail">
-              <div class="flipper">
-                <div class="front">
-                  <img src="img/team/karan.jpg" alt="Team" style="height:250px;width:250px">
-                </div>
-                <div class="back">
-                  <p class="padding-top">Ex payTM Software Engineer, MEAN Stack/elastic search expert. He manages that your products are scale-able and ready to go</p>
-                  <div class="social-bar">
-                    <a href="https://www.linkedin.com/in/karanraina" class="sb-skype" data-toggle="tooltip" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/karan.ssj4" data-toggle="tooltip" title="Facebook">
-                      <i class="fa fa-facebook"></i>
-                    </a>
+        <h3 class="teammate-name">Mohit Goyal</h3>
+        <p>Back-End Developer</p>
+      </div>
+    </div>
+    <!-- Teammate -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="teammate-1 text-center">
+        <div class="thumbnail">
+          <div class="flipper">
+            <div class="front">
+              <img src="img/team/karan.jpg" alt="Team" style="height:250px;width:250px">
+            </div>
+            <div class="back">
+              <p class="padding-top">Ex payTM Software Engineer, MEAN Stack/elastic search expert. He manages that your
+                products are scale-able and ready to go</p>
+              <div class="social-bar">
+                <a href="https://www.linkedin.com/in/karanraina" class="sb-skype" data-toggle="tooltip"
+                   title="Linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/karan.ssj4" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
 
-                  </div>
-                </div>
               </div>
             </div>
-            <h3 class="teammate-name">Karan Raina</h3>
-            <p>Back-End Developer</p>
           </div>
         </div>
-        <!-- Teammate -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="teammate-1 text-center">
-            <div class="thumbnail">
-              <div class="flipper">
-                <div class="front">
-                  <img src="img/team/amar.jpg" alt="Team" style="height:250px;width:250px">
-                </div>
-                <div class="back">
-                  <p class="padding-top">The Marketeer with the right kind of network, he takes care of all the projects and do all the work for you so that you can just sit back and relax.</p>
-                  <div class="social-bar">
-                    <a href="https://www.linkedin.com/in/amu153" class="sb-skype" data-toggle="tooltip" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/amu153" class="sb-facebook" data-toggle="tooltip" title="Facebook">
-                      <i class="fa fa-facebook"></i>
-                    </a>
+        <h3 class="teammate-name">Karan Raina</h3>
+        <p>Back-End Developer</p>
+      </div>
+    </div>
+    <!-- Teammate -->
+    <div class="col-lg-3 col-sm-6">
+      <div class="teammate-1 text-center">
+        <div class="thumbnail">
+          <div class="flipper">
+            <div class="front">
+              <img src="img/team/amar.jpg" alt="Team" style="height:250px;width:250px">
+            </div>
+            <div class="back">
+              <p class="padding-top">The Marketeer with the right kind of network, he takes care of all the projects and
+                do all the work for you so that you can just sit back and relax.</p>
+              <div class="social-bar">
+                <a href="https://www.linkedin.com/in/amu153" class="sb-skype" data-toggle="tooltip" title="Linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/amu153" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
 
-                  </div>
-                </div>
               </div>
             </div>
-            <h3 class="teammate-name">Amardeep Kumar</h3>
-            <p>Front-End Developer</p>
           </div>
         </div>
-        <!-- Hiring -->
-        <div class="col-lg-3 col-sm-6">
-          <a href="contacts.html">
-          <div class="teammate-2 text-center">
-            <div class="thumbnail-static">
-              <img src="img/team/00.png" alt="Hiring" style="width:250px;height:250px;">
-              <h4>We Are Hiring</h4>
-            </div>
-            <h3 class="teammate-name">Maybe You?</h3>
-            <p>Designer, Developer</p>
+        <h3 class="teammate-name">Amardeep Kumar</h3>
+        <p>Front-End Developer</p>
+      </div>
+    </div>
+    <!-- Hiring -->
+    <div class="col-lg-3 col-sm-6">
+      <a href="contacts.html">
+        <div class="teammate-2 text-center">
+          <div class="thumbnail-static">
+            <img src="img/team/00.png" alt="Hiring" style="width:250px;height:250px;">
+            <h4>We Are Hiring</h4>
           </div>
-          </a>
+          <h3 class="teammate-name">Maybe You?</h3>
+          <p>Designer, Developer</p>
         </div>
-      </div><!-- .row -->
-    </section><!-- .container -->
-
-
-
-    <!-- Scroll To Top Button -->
-    <a href="#" class="scroll-to-top-btn">
-      <i class="icon-arrow-up"></i>
-    </a><!-- .scroll-to-top-btn -->
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="top-footer">
-        <div class="container">
-          <div class="tools" style="display:flex;justify-content:space-around;">
-            <div class="cell">
-              <i><img src="img/footer/icons/envelope.png" alt="Email"></i>
-              <span><a href="mailto:info@actiwate.com">info@actiwate.in</a></span>
-            </div>
-            <div class="cell">
-              <i><img src="img/footer/icons/phone.png" alt="Phone"></i>
-              <span><a href="#">+91 9599177503</a></span>
-            </div>
-
-          </div>
-
-        </div><!-- .container -->
-      </div><!-- .top-footer -->
-
-     <div class="bottom-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <section class="widget widget_text">
-                <a href="index.html" class="site-logo">
-                  <img src="img/logo2.png" alt="Nucleus">
-                </a><!-- .site-logo -->
-                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
-              </section><!-- .widget.widget_text -->
-            </div><!-- .col-md-3 -->
-            <div class="col-md-3 col-sm-6">
-              <section class="widget widget_pages">
-                <h3 class="widget-title">
-                  <i class="icon-ribbon"></i>
-                  Actiwate
-                </h3>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="whychooseus.html">Why choose us</a></li>
-                </ul>
-              </section><!-- .widget.widget_pages -->
-            </div><!-- .col-md-3 -->
-            <div class="clearfix visible-sm"></div>
-            <div class="col-md-3 col-sm-6">
-              <section class="widget widget_pages">
-                <h3 class="widget-title">
-                  <i class="icon-cog"></i>
-                  About
-                </h3>
-                <ul>
-                  <li><a href="team-members.html">Team</a></li>
-                  <li><a href="contacts.html">Join us</a></li>
-                </ul>
-              </section><!-- .widget.widget_pages -->
-            </div><!-- .col-md-3 -->
-            <div class="col-md-3 col-sm-6">
-              <section class="widget widget_pages">
-                <h3 class="widget-title">
-                  <i class="icon-globe"></i>
-                  Work
-                </h3>
-                <ul>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="services-offered.html">Services Offered</a></li>
-                </ul>
-              </section><!-- .widget.widget_pages -->
-            </div><!-- .col-md-3 -->
-          </div><!-- .row -->
-          <div class="copyright">
-            <div class="column">
-              <p>&copy; Actiwate 2016. Made by <a href="http://8guild.com/" target="_blank">us</a> with <i class="fa fa-heart text-danger"></i> love.</p>
-            </div><!-- .column -->
-            <div class="column">
-              <div class="cards">
-                <img src="img/cards.png" alt="Credit Cards">
-              </div>
-            </div><!-- .column -->
-          </div><!-- .copyright -->
-        </div><!-- .container -->
-      </div><!-- .bottom-footer -->
-    </footer><!-- .footer -->
-
-  </div><!-- .page-wrapper -->
-
-  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
-  <script src="js/vendor/jquery-2.1.4.min.js"></script>
-  <script src="js/vendor/preloader.min.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/waves.min.js"></script>
-  <script src="js/vendor/placeholder.js"></script>
-  <script src="js/vendor/smoothscroll.js"></script>
-  <script src="js/vendor/waypoints.min.js"></script>
-  <script src="js/vendor/velocity.min.js"></script>
-  <script src="js/vendor/owl.carousel.min.js"></script>
-  <script src="js/vendor/jquery.spincrement.js"></script>
-  <script src="js/scripts.js"></script>
-
-</body><!-- <body> -->
-
-</html>
+      </a>
+    </div>
+  </div><!-- .row -->
+</section><!-- .container -->
